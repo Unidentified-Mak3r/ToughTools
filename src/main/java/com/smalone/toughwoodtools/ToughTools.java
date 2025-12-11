@@ -20,8 +20,7 @@ public class ToughTools extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         getServer().getPluginManager().registerEvents(this, this);
-        getServer().getPluginManager().registerEvents(new InstantWheatListener(this), this);
-        getLogger().info("InstantWheatListener enabled: wheat matures in ~1s after planting.");
+        getServer().getPluginManager().registerEvents(new MobModifierListener(this), this);
         getLogger().info("ToughTools enabled: empowering wooden pickaxes and axes.");
     }
 
