@@ -20,7 +20,7 @@ public class ToughTools extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         getServer().getPluginManager().registerEvents(this, this);
-        getServer().getPluginManager().registerEvents(new MobModifierListener(this), this);
+       getServer().getPluginManager().registerEvents(new MobModifierListener(), this);
         getLogger().info("ToughTools enabled: empowering wooden pickaxes and axes.");
     }
 
